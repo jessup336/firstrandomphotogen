@@ -1,29 +1,13 @@
-<!doctype html>
 git add index.html
+git commit -m "Add index.html file"
+git push origin master
+<!doctype html>
+<html>
   <head>
-    <title>Random Photo</title>
+    <title>My Website</title>
   </head>
   <body>
-    <h1>Random Photo</h1>
-    <img id="photo" alt="Random photo">
-    <script>
-      // Array of image URLs
-      var images = [];
-      for (var i = 1; i <= 100; i++) {
-        images.push('https://picsum.photos/id/' + i + '/500/500');
-      }
-      
-      // Get a random index
-      var index = Math.floor(Math.random() * images.length);
-      
-      // Get the image URL at the random index
-      var randomImage = images[index];
-      
-      // Get the img element
-      var imgElement = document.querySelector('#photo');
-      
-      // Set the src attribute of the img element to the random image URL
-      imgElement.src = randomImage;
-    </script>
+    <h1>Welcome to My Website</h1>
+    <p>This is my website. It's a work in progress, but I hope you like it!</p>
   </body>
 </html>
